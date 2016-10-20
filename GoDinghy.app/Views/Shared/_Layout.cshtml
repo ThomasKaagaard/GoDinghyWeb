@@ -1,0 +1,82 @@
+﻿@using Umbraco.Web
+@using Umbraco.Web.Security
+
+@{
+    Layout = null;
+    GlobalModel Global = ViewBag.Global;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - GoDinghy</title>
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="~/Content/Main.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="borders">
+    <div class="border hor top"></div>
+    <div class="border hor bot"></div>
+    <div class="border vert left"></div>
+    <div class="border vert right"></div>
+</div>
+@Html.Partial("_LoginModal", Global.MemberLogin)
+
+<section class="header">
+    @Html.Partial("_Menu", Global.MenuItems)
+</section>
+
+<section class="content">
+    @RenderBody()
+</section>
+
+<section class="footer">
+    <div class="container-fluid">
+        <hr/>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-content">
+                        <p>2016&copy; Afgangsprojekt af Lasse, Michael & Thomas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<script src="~/Scripts/jquery-2.2.0.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="~/Scripts/jquery.validator.extensions.js"></script>
+<script src="~/Scripts/jquery.form.min.js"></script>
+
+<script src="~/Scripts/MicrosoftAjax.js"></script>
+<script src="~/Scripts/MicrosoftMvcAjax.js"></script>
+<script src="~/Scripts/MicrosoftMvcValidation.js"></script>
+    <script type="text/javascript">
+        $(document)
+            .ready(function () {
+                $.ajaxSetup({ cache: false });
+            });
+    </script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+
+    @if (!Global.IsLoggedIn && Global.LoginPage) {
+        <script>
+            $(document)
+                .ready(function() {
+                    $('#loginModal').modal('show');
+                });
+        </script>
+    }
+
+    <script src="~/Scripts/Custome/Global.js"></script>
+    @RenderSection("Scripts", false)
+</body>
+</html>

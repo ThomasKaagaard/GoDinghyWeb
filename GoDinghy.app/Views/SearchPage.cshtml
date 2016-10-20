@@ -1,0 +1,22 @@
+﻿@using System.Linq
+@model SearchPageModel
+	
+<h1>@Model.Header</h1>
+@Model.BodyText
+
+@if (Model.SearchItems.Any())
+{
+	<ol id="searchresults">
+		@foreach (var item in Model.SearchItems)
+		{
+			<li>
+				<a href="@item.URL">@item.Title</a>
+				<p>@item.Description</p>
+			</li>
+		}
+	</ol>
+}
+else
+{
+	<h3>Din søgning gav ikke nogen resultater</h3>
+}

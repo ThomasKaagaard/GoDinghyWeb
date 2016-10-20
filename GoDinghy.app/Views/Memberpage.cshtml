@@ -1,0 +1,28 @@
+﻿@model MemberpageModel
+
+<div class="customerpage">
+    <div class="container-fluid">
+        <div class="container text-wrapper">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>@Model.Header</h1>
+                    @Model.Bodytext
+                </div>
+                <div class="col-md-12">
+                    @using (Ajax.BeginForm("OpenLogFile", "MemberSurface", null))
+                    {
+                        <input type="submit" value="Åbn login log" />
+                    }
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    @Html.Partial("_CreateMember", Model.MemberModel)
+                </div>
+                <div class="col-md-12" id="thanks">
+                    <p>teakketekst</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

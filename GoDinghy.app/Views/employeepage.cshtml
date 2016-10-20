@@ -1,0 +1,21 @@
+﻿@model EmployeepageModel
+
+<div class="employeepage">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="@Model.Image" alt="@Model.Name" title="@Model.Name"/>
+                    
+                </div>
+                <div class="col-md-6">
+                    <p>@Model.Name</p>
+                    <p>@Model.Title</p>
+                    <p><a href="mailto:@Model.Email">@Model.Email</a></p>
+                    <p><a href="Tel:@Model.Phone">@Model.Phone</a></p>
+                    <hr/>
+                    @Model.Description
+                </div>
+            </div>
+        </div>
+</div>

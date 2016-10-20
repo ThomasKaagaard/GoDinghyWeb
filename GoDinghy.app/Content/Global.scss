@@ -1,0 +1,311 @@
+﻿@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700';
+
+$blue: #49b3f0;
+$dark: #31393c;
+$offWhite: #fcfcfc;
+$orrange: #fa7921;
+
+$header-height: 100px;
+$border-height-large: 30px;
+$border-height-small: 10px;
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: rgb(248,248,248);
+    h1{
+        font-size: 48px;
+        line-height: 1;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 30px 0;
+    }
+    h2{
+        font-size: 38px;
+        line-height: 1;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 30px 0 20px;
+    }
+    h3{
+        font-size: 28px;
+        line-height: 1;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 30px 0 20px;
+    }    
+    p, span{
+        font-size: 16px;
+        line-height: 1.3;
+        font-weight: 400;
+    }
+    a{
+        font-size: 16px;
+        line-height: 1;
+        font-weight: 400;
+        color: $blue;
+        &:hover{
+            text-decoration: none;
+            color: $orrange;
+        }
+    }
+    img{
+        width: 100%;
+    }
+}
+.header{
+    background-color: $blue;
+    margin-top: $border-height-large;
+    .login-menu{
+        text-align: right;
+        form, p, a{
+            color: $offWhite;
+            display: inline-block;
+            font-size: 12px;
+        }
+        a{
+            padding: 0 5px;
+            &:hover{
+                color: $orrange;
+            }
+        }
+        input {
+            border: none;
+            background-color: transparent;
+            color: $offWhite;
+            &:hover{
+                color: $orrange;
+            }
+        }
+        
+    }
+    .navbar{
+        padding: 10px 0;
+        margin: 0;
+        .logo{
+            vertical-align: middle;
+            display: flex;
+            img{
+                max-width: 160px;
+            }
+        }
+    }
+    ul{
+        li{
+            a{
+                color: $offWhite;
+                padding: 5px 20px;
+                &:hover{
+                    background: none;
+                    color: $orrange;
+                }
+            }
+        }
+    }
+    @media (max-width: 767px){
+        margin-top: $border-height-small;
+    }
+}
+.content {
+    .frontpage{
+        .banner {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            .text-wrapper {
+                position: relative;
+                top: calc(50% - 100px);
+                .text{
+                    background-color: rgba(0,0,0,0.2);
+                    color: white;
+                    padding: 20px 25px;
+                }
+            }
+        }
+    }
+    .banner {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        margin-bottom: 50px;
+    }
+    .text-wrapper {
+        .text{
+            text-align: center;
+        }
+    }
+    .contactpage{
+        .box{
+            background-color: white;
+            padding: 50px 100px;
+        }
+        .contactform{
+            h3, p, .editor-label{
+                margin-left: 10px;
+            }
+            .editor-field{
+                margin-bottom: 10px;
+            }
+            input, textarea{
+                width: 100%;
+                border: none;
+                padding: 15px 10px;
+                background-color: $offWhite;
+            }
+            textarea{
+                height: 100px;
+            }
+            button{
+                width: 200px;
+                border: none;
+                background-color: $blue;
+                padding: 15px 10px;
+                color: $offWhite;
+                text-transform: uppercase;
+                margin: 10px 0 0;
+                &:hover{
+                    background-color: $orrange;
+                }
+            }
+        }
+        .thanks{
+            display: none;
+        }
+        
+    }
+}
+.customerpage{
+    input, select, button{
+        border: none;
+        padding: 10px;
+        width: 250px;
+        margin-bottom: 10px;
+    }
+    input, select{
+        background-color: #fff;
+    }
+}
+#thanks{
+    display: none;
+}
+.footer{
+    background-color: #333333;
+    margin-bottom: $border-height-large;
+    .footer-content{
+        color: white;
+        text-align: center;
+        padding: 30px 0;
+    }
+    @media (max-width: 767px){
+        margin-bottom: $border-height-small;
+    }
+}
+
+/* BORDERS*/
+.content-border-frame {
+    padding: $header-height $border-height-large 0;
+
+    @media(max-width: 767px) {
+        padding: 55px $border-height-small 0;
+    }
+}
+
+#borders .border {
+    position: fixed;
+    z-index: 8;
+    background: white;
+    &.hor {
+        left: 0;
+        width: 100%;
+        height: $border-height-large;
+        @media(max-width: 767px) {
+            height: $border-height-small;
+        }
+    }
+    &.vert {
+        top: 0;
+        width: $border-height-large;
+        height: 100%;
+        @media(max-width: 767px) {
+            width: $border-height-small;
+        }
+    }
+    &.top {
+        top: 0;
+    }
+    &.bot {
+        bottom: 0;
+    }
+    &.left {
+        left: 0;
+    }
+    &.right {
+        right: 0;
+    }
+}
+
+// MARKER
+
+.map-marker {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: $blue;
+    border-radius: 50%
+}
+
+.map-marker:after, .map-marker:before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin: -50px 0 0 -50px;
+    background: rgba(250, 121, 33, 0.6);
+    border: 10px solid $blue;
+    border-radius: 50%;
+    -webkit-transform: translate3d(0, 0, 0) scale(0);
+    -ms-transform: translate3d(0, 0, 0) scale(0);
+    transform: translate3d(0, 0, 0) scale(0);
+    -webkit-animation: map-marker-pulse 4s ease-in infinite;
+    animation: map-marker-pulse 4s ease-in infinite
+}
+
+.map-marker:after {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s
+}
+
+@-webkit-keyframes map-marker-pulse {
+    from {
+        border-width: 35px;
+        opacity: .5;
+        -webkit-transform: translate3d(0, 0, 0) scale(0)
+    }
+
+    to {
+        border-width: 0;
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0) scale(1)
+    }
+}
+
+@keyframes map-marker-pulse {
+    from {
+        border-width: 35px;
+        opacity: .5;
+        -webkit-transform: translate3d(0, 0, 0) scale(0);
+        -ms-transform: translate3d(0, 0, 0) scale(0);
+        transform: translate3d(0, 0, 0) scale(0)
+    }
+
+    to {
+        border-width: 0;
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0) scale(1);
+        -ms-transform: translate3d(0, 0, 0) scale(1);
+        transform: translate3d(0, 0, 0) scale(1)
+    }
+}

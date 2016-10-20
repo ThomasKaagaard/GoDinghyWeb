@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="416365c51f294e23ae5ef36883d460f2" Name="Diagram1" ZoomLevel="33" DisplayType="true">
+        <EntityTypeShape EntityType="GoDinghyWebModel.cmsContent" Width="1.5" PointX="5.25" PointY="23.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.cmsContentType" Width="1.5" PointX="5.25" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.cmsContentTypeAllowedContentType" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.cmsContentVersion" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.cmsContentXml" Width="1.5" PointX="2.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.cmsDataType" Width="1.5" PointX="5.25" PointY="36" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.cmsDataTypePreValues" Width="1.5" PointX="0.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.cmsDictionary" Width="1.5" PointX="7.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.cmsDocument" Width="1.5" PointX="5.25" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.cmsDocumentType" Width="1.5" PointX="5.25" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.cmsLanguageText" Width="1.5" PointX="3" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.cmsMacro" Width="1.5" PointX="11.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.cmsMacroProperty" Width="1.5" PointX="14" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.cmsMember" Width="1.5" PointX="0.75" PointY="23.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.cmsMemberType" Width="1.5" PointX="5.25" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.cmsPreviewXml" Width="1.5" PointX="11.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.cmsPropertyData" Width="1.5" PointX="10.25" PointY="26.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.cmsPropertyType" Width="1.5" PointX="8" PointY="42.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.cmsPropertyTypeGroup" Width="1.5" PointX="5.75" PointY="43.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.cmsTagRelationship" Width="1.5" PointX="13.25" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.cmsTags" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.cmsTask" Width="1.5" PointX="11.25" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.cmsTaskType" Width="1.5" PointX="9" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.cmsTemplate" Width="1.5" PointX="5.25" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.umbracoAccess" Width="1.5" PointX="5.25" PointY="26.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.umbracoAccessRule" Width="1.5" PointX="7.5" PointY="26.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.umbracoCacheInstruction" Width="1.5" PointX="9.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.umbracoDeployChecksum" Width="1.5" PointX="2.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.umbracoDeployDependency" Width="1.5" PointX="5" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.umbracoDomains" Width="1.5" PointX="5.25" PointY="33.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.umbracoExternalLogin" Width="1.5" PointX="11.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.umbracoLanguage" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.umbracoLog" Width="1.5" PointX="0.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.umbracoMigration" Width="1.5" PointX="13.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.umbracoNode" Width="1.5" PointX="3" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.umbracoRedirectUrl" Width="1.5" PointX="13.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.umbracoRelation" Width="1.5" PointX="8.25" PointY="22.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.umbracoRelationType" Width="1.5" PointX="6" PointY="39.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.umbracoServer" Width="1.5" PointX="13.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.umbracoUser" Width="1.5" PointX="9" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.umbracoUser2app" Width="1.5" PointX="11.25" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.umbracoUser2NodeNotify" Width="1.5" PointX="11.25" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.umbracoUser2NodePermission" Width="1.5" PointX="8.25" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GoDinghyWebModel.umbracoUserType" Width="1.5" PointX="6.75" PointY="6.5" IsExpanded="true" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_cmsContent_umbracoNode_id" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_cmsContentType_umbracoNode_id" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_cmsDataType_umbracoNode_id" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_cmsDocument_umbracoNode_id" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_cmsDocumentType_umbracoNode_id" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_cmsLanguageText_umbracoLanguage_id" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_cmsMacroProperty_cmsMacro_id" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_cmsMember_umbracoNode_id" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_cmsMemberType_umbracoNode_id" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_cmsPropertyData_cmsPropertyType_id" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_cmsPropertyData_umbracoNode_id" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_cmsPropertyType_cmsPropertyTypeGroup_id" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_cmsTagRelationship_cmsPropertyType" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_cmsTagRelationship_cmsTags_id" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_cmsTags_cmsTags" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_cmsTask_cmsTaskType_id" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_cmsTask_umbracoNode_id" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_cmsTask_umbracoUser" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_cmsTask_umbracoUser1" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_cmsTemplate_umbracoNode" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_umbracoAccess_umbracoNode_id" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_umbracoAccess_umbracoNode_id1" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_umbracoAccess_umbracoNode_id2" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_umbracoAccessRule_umbracoAccess_id" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_umbracoDeployDependency_umbracoDeployChecksum_id1" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_umbracoDeployDependency_umbracoDeployChecksum_id2" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_umbracoDomains_umbracoNode_id" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_umbracoNode_umbracoNode_id" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_umbracoRelation_umbracoNode" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_umbracoRelation_umbracoNode1" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_umbracoUser2NodeNotify_umbracoNode_id" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_umbracoUser2NodePermission_umbracoNode_id" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_umbracoRelation_umbracoRelationType_id" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_umbracoUser_umbracoUserType_id" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_umbracoUser2app_umbracoUser_id" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_umbracoUser2NodeNotify_umbracoUser_id" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.FK_umbracoUser2NodePermission_umbracoUser_id" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.cmsContentType2ContentType" ManuallyRouted="false" />
+        <AssociationConnector Association="GoDinghyWebModel.cmsMember2MemberGroup" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

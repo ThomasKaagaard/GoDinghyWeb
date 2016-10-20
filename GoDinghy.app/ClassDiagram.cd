@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GoDinghy.app.Controllers.Surface.MemberSurfaceController" Collapsed="true">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="GoDinghy.app.Controllers.Surface.MemberSurfaceController.ApplyFormResponse" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Controllers\Surface\MemberSurfaceController.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAACAAAAAAAAAAAABAAAAAAAIAAAAAEAAA=</HashCode>
+      <FileName>Controllers\Surface\MemberSurfaceController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GoDinghy.app.Classes.Helpers.LogfileHelper" Collapsed="true">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Classes\Helpers\LogfileHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

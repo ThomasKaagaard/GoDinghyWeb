@@ -1,0 +1,19 @@
+﻿@model ErrorPageModel
+
+<div class="textpage">
+    <div class="container-fluid">
+        <div class="banner" style="background-image: url(@Model.Banner)">
+
+        </div>
+        <div class="container text-wrapper">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text">
+                        <h1>@Model.Header</h1>
+                        @Model.Bodytext
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

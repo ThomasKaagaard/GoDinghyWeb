@@ -1,0 +1,57 @@
+﻿@model CreateMemberModel
+
+@using (Ajax.BeginForm("SignUp", "MemberSurface", new { nodeId = Model.NodeId }, new AjaxOptions()
+{
+    OnComplete = "formCompleted(data)",
+    HttpMethod = "Post"
+}, new { @class = "createMemberForm" }))
+{
+    <div>
+        <div class="editor-label">
+            @Html.LabelFor(x => x.Name)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(x => x.Name, new { placeholder = "Indtast navn" })
+            @Html.ValidationMessageFor(x => x.Name)
+        </div>
+    </div>
+    <div>
+        <div class="editor-label">
+            @Html.LabelFor(x => x.Email)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(x => x.Email, new { placeholder = "Indtast email" })
+            @Html.ValidationMessageFor(x => x.Email)
+        </div>
+    </div>
+    <div>
+        <div class="editor-label">
+            @Html.LabelFor(x => x.Username)
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(x => x.Username, new { placeholder = "Indtast brugernavn" })
+            @Html.ValidationMessageFor(x => x.Username)
+        </div>
+    </div>
+    <div>
+        <div class="editor-label">
+            @Html.LabelFor(x => x.Password)
+        </div>
+        <div class="editor-field">
+            @Html.PasswordFor(x => x.Password, new {placeholder = "Indtast kodeord"})
+            @Html.ValidationMessageFor(x => x.Password)
+        </div>
+    </div>
+    <div>
+        <div class="editor-label">
+            @Html.LabelFor(x => x.SelectedGroup)
+        </div>
+        <div class="editor-field">
+            @Html.DropDownListFor(x => x.SelectedGroup, Model.MemberGroups, "- Vælg en rolle -")
+            @Html.ValidationMessageFor(x => x.SelectedGroup)
+        </div>
+    </div>
+    <div>
+        <button type="submit" id="signup-member-submit" class="costom" value="Opret medlem"><span class="button">Opret medlem</span></button>
+    </div>
+}

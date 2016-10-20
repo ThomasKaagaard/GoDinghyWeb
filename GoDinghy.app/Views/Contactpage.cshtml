@@ -1,0 +1,127 @@
+﻿@model ContactpageModel
+
+<div class="contactpage">
+    <div class="container-fluid">
+        <div class="banner" style="background-image: url(@Model.Banner)">
+
+        </div>
+        <div class="container text-wrapper">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text">
+                        <h1>@Model.Header</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box">
+                    <h3>Kontaktinformation</h3>
+                    @Model.CompanyAddress
+                    <p>
+                        Telefon: <a href="Tel:@Model.CompanyPhone">@Model.CompanyPhone</a>
+                    </p>
+                    <p>
+                        E-mail: <a href="Mailto:@Model.CompanyEmail">@Model.CompanyEmail</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="box">
+                    <div class="form-bg">
+                        <div class="contactform">
+                            @Html.Partial("_Contactform", Model.Contactform)
+                        </div>
+                        <div class="thanks">
+                            <h3>@Model.ThanksHeader</h3>
+                            @Model.ThanksBodytext
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div id="map" style="height: 500px; width: 100%; margin: 50px 0 -20px;"></div>
+    </div>
+
+</div>
+
+@section Scripts{
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyA9PGAWyEx1nGnWPp-Fmc9gvT_c1OocXtI"></script>
+    <script>
+        function CustomMarker(e, t, i) {
+            this.latlng = e, this.args = i, this.setMap(t)
+        }
+        function initMap() {
+            {
+                var lat = "55.380710";
+                var lon = "10.410847";
+                var e = new google.maps.LatLng(lat, lon), t = new google.maps.LatLng(lat,lon), i = {
+                    center: t,
+                    styles: mapStyles,
+                    scrollwheel: false,
+                    draggable: true,
+                    zoom: 8,
+                    streetViewControl: false,
+                    mapTypeControl: false,
+                }, n = new google.maps.Map(document.getElementById("map"), i);
+                new CustomMarker(e, n, {})
+            }
+        }
+        CustomMarker.prototype = new google.maps.OverlayView, CustomMarker.prototype.draw = function() {
+            var e = this, t = this.div;
+            if (!t) {
+                t = this.div = document.createElement("div"), t.className = "map-marker", "undefined" != typeof e.args.marker_id && (t.dataset.marker_id = e.args.marker_id), google.maps.event.addDomListener(t, "click", function() {
+                    google.maps.event.trigger(e, "click")
+                });
+                var i = this.getPanes();
+                i.overlayImage.appendChild(t)
+            }
+            var n = this.getProjection().fromLatLngToDivPixel(this.latlng);
+            n && (t.style.left = n.x + "px", t.style.top = n.y + "px")
+        }, CustomMarker.prototype.remove = function() {
+            this.div && (this.div.parentNode.removeChild(this.div), this.div = null)
+        }, CustomMarker.prototype.getPosition = function() {
+            return this.latlng
+        };
+
+        var mapStyles = [
+            {
+                "featureType": "administrative",
+                "elementType": "all",
+                "stylers": [{ "visibility": "on" }, { "saturation": -100 }, { "lightness": 20 }]
+            }, {
+                "featureType": "road",
+                "elementType": "all",
+                "stylers": [{ "visibility": "on" }, { "saturation": -100 }, { "lightness": 40 }]
+            }, {
+                "featureType": "water",
+                "elementType": "all",
+                "stylers": [{ "visibility": "on" }, { "saturation": -10 }, { "lightness": 30 }]
+            }, {
+                "featureType": "landscape.man_made",
+                "elementType": "all",
+                "stylers": [{ "visibility": "simplified" }, { "saturation": -60 }, { "lightness": 10 }]
+            }, {
+                "featureType": "landscape.natural",
+                "elementType": "all",
+                "stylers": [{ "visibility": "simplified" }, { "saturation": -60 }, { "lightness": 60 }]
+            }, {
+                "featureType": "poi",
+                "elementType": "all",
+                "stylers": [{ "visibility": "on" }, { "saturation": -100 }, { "lightness": 60 }]
+            }, {
+                "featureType": "transit",
+                "elementType": "all",
+                "stylers": [{ "visibility": "off" }, { "saturation": -100 }, { "lightness": 60 }]
+            }
+        ];
+        initMap();
+    </script>
+}

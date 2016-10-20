@@ -1,0 +1,28 @@
+﻿@model FrontpageModel
+<div class="frontpage">
+    <div class="container-fluid">
+        <div class="banner" style="background-image: url(@Model.Banner)">
+            <div class="container text-wrapper">
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="text">
+                            <h1>@Model.Header</h1>
+                            @Model.Teaser
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @Model.Grid
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                
+            </div>
+        </div>
+    </div>
+
+
+
+</div>

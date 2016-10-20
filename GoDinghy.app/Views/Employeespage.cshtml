@@ -1,0 +1,42 @@
+﻿@model EmployeespageModel
+
+<div class="employeespage">
+    <div class="container-fluid">
+        <div class="banner" style="background-image: url(@Model.Banner)">
+
+        </div>
+        <div class="container text-wrapper">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text">
+                        <h1>@Model.Header</h1>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    @Model.Bodytext
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        @foreach (var employee in Model.Employees)
+                        {
+                            <div class="col-md-4">
+                                <a href="@employee.Url">
+                                    <img src="@employee.Image" alt="@employee.Name" title="@employee.Name" />
+                                </a>
+                                    <p>@employee.Email</p>
+                                    <p>
+                                        @employee.Title
+                                    </p>
+                                    <p>
+                                        <a href="mailto:@employee.Email">@employee.Email</a>
+                                    </p>
+                                    <p><a href="Tel:@employee.Phone">@employee.Phone</a></p>
+                                
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
